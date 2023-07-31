@@ -17,9 +17,9 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 
-from Pre_entrega_3.views import saludar
+from Pre_entrega_3.views import pag_inicio
 
 urlpatterns = [
     path("admin/", admin.site.urls),
-    path("saludo/", saludar),
+    path("Inicio/", pag_inicio ),
 ]
