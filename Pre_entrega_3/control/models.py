@@ -3,20 +3,28 @@ from django.db import models
 # Create your models here.
 
 class Equipo(models.Model):
-    # los atributos de clase (son las columnas de la tabla)
     club = models.CharField(max_length=64)
-    numero = models.IntegerField()
 
+class Pais(models.Model):
+    pais_equipo = [
+        ("AR", "Argentina"),
+        ("ES", "España"),
+        ("US", "Estados Unidos"),
+    ]
+    name = models.CharField(max_length=60)
+    posicion_jugador = models.CharField(max_length=2, choices=pais_equipo)
 class Jugador(models.Model):
     apellido = models.CharField(max_length=256)
     nombre = models.CharField(max_length=256)
-    dni = models.CharField(max_length=32)
+    nacionalidad = models.CharField(max_length=256)
+    año_debut = models.PositiveIntegerField()
     fecha_nacimiento = models.DateField(null=True)
     club = models.ManyToManyField(Equipo)
 
 class Atributos(models.Model):
-    peso = models.CharField(max_length=32)
-    altura = models.CharField(max_length=32)
+    altura = models.FloatField()  # Campo de altura
+    peso = models.DecimalField(max_digits=5, decimal_places=2)  # Campo de peso
+
 
 class Posicion(models.Model):
     posicion_jugador = [
