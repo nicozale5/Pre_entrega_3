@@ -2,14 +2,8 @@
 # Pre Entrega 3
 
 # Descripción
-### *Proyecto pre entrega nro 3 de carrera Python para instituto Coderhouse.*
-### *Proyecto Coderhouse basado en equipos de basket del mundo con plantilla actualizada. Está desarrollada con Django y utiliza una base de datos PostgreSQL para almacenar la información.*
-...
-...
-...
-...
-...
-
+*Proyecto pre entrega nro 3 de carrera Python para instituto Coderhouse.*
+*Proyecto Coderhouse basado en equipos de basket del mundo con plantilla actualizada. Está desarrollada con Django y utiliza una base de datos SQL para almacenar la información.*
 # SuperAdmin 
 *nicoz*
 *nikoyakuza5*
