@@ -1,0 +1,23 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Mundo Basket</title>
+    <meta name="description" content="Our first page">
+    <meta name="keywords" content="html tutorial template">
+  </head>
+  <body>
+    <h1>
+      Listado de jugadores
+    </h1>
+
+    <h3>Jugadores:</h3>
+    <ul>
+    {% for jugador in jugador %}
+      <li>
+        {{ jugador.apellido}}, {{ jugador.nombre}}, {{ jugador.posicion}}
+      </li>
+    {% endfor %}
+    </ul>
+
+  </body>
+</html>
