@@ -1,5 +1,8 @@
-# Pre_entrega_3
-### Proyecto pre entrega nro 3 de carrera Python
+# CODERHOUSE - PYTHON - Comision 55350
+# Pre Entrega 3
+
+
+### Proyecto pre entrega nro 3 de carrera Python para instituto Coderhouse
 
 Descripción
 MiProyecto es una aplicación web que permite a los usuarios crear y compartir notas. Está desarrollada con Django y utiliza una base de datos PostgreSQL para almacenar la información.
