@@ -33,3 +33,19 @@ def listar_equipo(request):
         context=contexto,
     )
     return http_response
+
+def listar_liga(request):
+    contexto = {
+        "liga": [
+            {"nombre": "NBA", "pais": "Estados Unidos"},
+            {"nombre": "NCAA", "pais": "Estados Unidos"},
+            {"nombre": "ACB", "pais": "España"},
+            {"nombre": "Liga Nacional", "pais": "Argentina"},
+        ]
+    }
+    http_response = render(
+        request=request,
+        template_name='control/listar_liga.html',
+        context=contexto,
+    )
+    return http_response

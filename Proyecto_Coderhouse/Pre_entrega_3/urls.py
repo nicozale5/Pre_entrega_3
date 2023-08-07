@@ -22,7 +22,7 @@ from Pre_entrega_3.views import pag_inicio
 # Urls Generales del proyecto Pre Entregas
 
 urlpatterns = [
+    path("", pag_inicio,name="Inicio"),
     path("admin/", admin.site.urls),
-    path("Inicio/", pag_inicio ),
     path("control/",include("control.urls")),
 ]

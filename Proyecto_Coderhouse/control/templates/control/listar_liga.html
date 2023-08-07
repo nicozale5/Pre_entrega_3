@@ -1,0 +1,12 @@
+{% extends "inicio.html" %}
+
+{% block contenido %}
+<h3>Liga:</h3>
+<ul>
+    {% for liga in liga %}
+    <li>
+        {{ liga.nombre}}, {{ liga.pais}}
+    </li>
+    {% endfor %}
+</ul>
+{% endblock contenido %}

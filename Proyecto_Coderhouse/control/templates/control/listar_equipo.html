@@ -1,11 +1,6 @@
-<!doctype html>
-<html>
-  <head>
-    <title>Mundo Basket</title>
-    <meta name="description" content="Our first page">
-    <meta name="keywords" content="html tutorial template">
-  </head>
-  <body>
+{% extends "inicio.html" %}
+
+{% block contenido %}
     <h3>Equipos:</h3>
     <ul>
     {% for equipo in equipo %}
@@ -14,6 +9,4 @@
       </li>
     {% endfor %}
     </ul>
-
-  </body>
-</html>
+{% endblock contenido %}
