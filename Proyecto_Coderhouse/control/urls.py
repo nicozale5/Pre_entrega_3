@@ -7,7 +7,7 @@ from control.views import listar_jugador,listar_equipo,listar_liga
 # Urls De Inicio
 
 urlpatterns = [
-   path("jugador/", listar_jugador),
-   path("equipo/",listar_equipo),
-   path("liga/",listar_liga),
+   path("jugador/", listar_jugador,name="Jugador"),
+   path("equipo/",listar_equipo,name="Equipo"),
+   path("liga/",listar_liga,name="Liga"),
 ]
