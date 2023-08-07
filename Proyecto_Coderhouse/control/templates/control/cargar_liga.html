@@ -1,0 +1,16 @@
+{% extends "inicio.html" %}
+
+{% block titulo %}
+Cargar Liga
+{% endblock titulo %}
+
+{% block contenido %}
+<h3>Ingrese una nueva Liga</h3>
+<form method="post">
+    {% csrf_token %}
+    {{ formulario.as_p }}
+    <input class="btn btn-success" type="submit" value="Cargar Liga" />
+</form>
+<br>
+    <a href="{% url 'cargar_liga' %}">Volver a la lista</a>
+{% endblock contenido %}

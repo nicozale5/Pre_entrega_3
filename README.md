@@ -6,7 +6,7 @@
 *Proyecto Coderhouse basado en equipos de basket del mundo con plantilla actualizada. Está desarrollada con Django y utiliza una base de datos SQL para almacenar la información.*
 ### SuperAdmin 
 *nicoz*
-*nikoyakuza5*
+*5525*
 
 
 ### Créditos
