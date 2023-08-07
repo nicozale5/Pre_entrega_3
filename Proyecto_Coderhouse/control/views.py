@@ -62,24 +62,19 @@ def cargar_liga(request):
     )
     return http_response
 
-"""
-def buscar_cursos(request):
-   if request.method == "POST":
+
+def buscar_liga(request):
+    if request.method == "POST":
         data = request.POST
         busqueda = data["busqueda"]
-        # Filtro simple
-        cursos = Curso.objects.filter(comision__contains=busqueda)
-        # Ejemplo filtro avanzado
-        # cursos = Curso.objects.filter(
-        #     Q(nombre=busqueda) | Q(comision__contains=busqueda)
-        # )
+        
+        liga = Liga.objects.filter(pais__contains=busqueda)
         contexto = {
-            "cursos": cursos,
+            "liga": liga,
         }
         http_response = render(
             request=request,
-            template_name='control_estudios/lista_cursos.html',
+            template_name='control/listar_liga.html',
             context=contexto,
-        )
-        return http_response
-"""
+    )
+    return http_response
