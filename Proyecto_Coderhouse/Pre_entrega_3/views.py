@@ -7,7 +7,7 @@ from django.http import HttpResponse
 def pag_inicio (request):
     http_response = render(
         request=request,
-        template_name="inicio.html",
+        template_name="pag_base.html",
         context={},
     )
     return http_response
