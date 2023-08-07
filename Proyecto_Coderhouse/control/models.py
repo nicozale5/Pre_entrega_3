@@ -19,19 +19,19 @@ class Liga(models.Model):
     pais = models.CharField(max_length=100)
 
     def __str__(self):
-        return self.nombre
+        return f"{self.liga}, {self.pais}"
 
 class Equipo(models.Model):
     nombre = models.CharField(max_length=100)
     pais = models.ForeignKey(Liga, on_delete=models.CASCADE)
 
     def __str__(self):
-        return self.nombre
+        return f"{self.nombre}, {self.pais}"
 class Jugador(models.Model):
     nombre = models.CharField(max_length=100)
     altura = models.FloatField()
     peso = models.DecimalField(max_digits=5, decimal_places=2)
-    equipo = models.CharField(max_length=100)
+    equipo = models.ForeignKey(Equipo, on_delete=models.CASCADE)
     posicion = models.CharField(max_length=50)
     puntos_por_partido = models.DecimalField(max_digits=4, decimal_places=1)
     asistencias_por_partido = models.DecimalField(max_digits=4, decimal_places=1)
@@ -39,7 +39,7 @@ class Jugador(models.Model):
     edad = models.IntegerField()
 
     def __str__(self):
-        return self.nombre
+        return f"{self.nombre}, {self.equipo}"
 
 # Se guarda class Atributos y Posicion
 """
