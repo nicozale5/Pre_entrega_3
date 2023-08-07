@@ -1,3 +1,7 @@
 from django.contrib import admin
 
-# Register your models here.
+from control.models import Liga, Equipo, Jugador
+
+admin.site.register(Liga)
+admin.site.register(Equipo)
+admin.site.register(Jugador)
